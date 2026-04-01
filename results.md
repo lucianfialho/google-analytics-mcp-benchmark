@@ -56,7 +56,7 @@
 
 ## Methodology
 
-- **Tokenizer**: tiktoken `cl100k_base` (GPT-4o family, comparable to Claude)
+- **Tokenizer**: tiktoken `o200k_base` (GPT-5 tokenizer)
 - **MCP payload**: Real `listTools` JSON-RPC response extracted from `google-analytics-mcp` v0.2.0
 - **CLI payload**: Real `gmp` CLI outputs captured against live Google Analytics API
 - **MCP schema cost**: Counted once per task (injected into LLM context on every interaction)

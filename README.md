@@ -1,6 +1,6 @@
 # MCP vs CLI Token Benchmark: Google Analytics
 
-A reproducible benchmark comparing the token cost of [Google Analytics MCP](https://github.com/googleanalytics/google-analytics-mcp) vs the [`gmp` CLI](https://github.com/lucianfialho/gmp) when used by AI agents (Claude, GPT-4, etc).
+A reproducible benchmark comparing the token cost of [Google Analytics MCP](https://github.com/googleanalytics/google-analytics-mcp) vs the [`gmp` CLI](https://github.com/lucianfialho/gmp) when used by AI agents (Claude, GPT-5, Gemini, etc).
 
 **TL;DR**: MCP consumes **2-22x more tokens** than CLI for the same GA4 tasks, primarily because MCP injects the full tool schema (~8,000 tokens) into the LLM context on every interaction.
 
@@ -106,7 +106,7 @@ benchmark/
 
 ## Methodology
 
-- **Tokenizer**: tiktoken `cl100k_base` (GPT-4o family, comparable to Claude's tokenizer)
+- **Tokenizer**: tiktoken `o200k_base` (GPT-5 tokenizer)
 - **MCP payload**: Real `listTools` JSON-RPC response extracted from [`google-analytics-mcp`](https://github.com/googleanalytics/google-analytics-mcp) v0.2.0 source code
 - **CLI payload**: Real `gmp` CLI outputs captured against live Google Analytics Data API
 - **MCP schema cost**: Full listTools injected per task (this is how MCP works — the schema is in context for every LLM call)
@@ -126,7 +126,7 @@ For each task, we count:
 
 ### Limitations
 
-- Token counts use tiktoken (OpenAI's tokenizer), not Claude's exact tokenizer. The numbers are directionally accurate but may differ by ~5%.
+- Token counts use tiktoken with `o200k_base` (GPT-5 tokenizer). Other models use different tokenizers, so counts may differ by ~5-10%, but ratios remain consistent.
 - MCP schema is counted per task. In a multi-turn conversation, the schema is in context the whole time (amortized), but still consumes the same context window space.
 - CLI discovery assumes the LLM calls `--help` progressively. A well-trained LLM may skip some levels for familiar CLIs, making the CLI even more efficient.
 - We compare only GA4 tasks since that's the overlap between both tools.

@@ -3,7 +3,7 @@
 MCP vs CLI Token Benchmark — Google Analytics MCP vs gmp CLI
 ============================================================
 Uses real captured payloads (no mocked data).
-Counts tokens with tiktoken (cl100k_base, same family as Claude's tokenizer).
+Counts tokens with tiktoken (o200k_base / GPT-5 tokenizer).
 
 Payloads are stored in:
   payloads/mcp/  — JSON-RPC listTools response from google-analytics-mcp
@@ -31,7 +31,7 @@ PAYLOADS_DIR = Path(__file__).parent.parent / "payloads"
 MCP_DIR = PAYLOADS_DIR / "mcp"
 CLI_DIR = PAYLOADS_DIR / "cli"
 
-enc = tiktoken.encoding_for_model("gpt-4o")
+enc = tiktoken.encoding_for_model("gpt-5")
 
 
 def count_tokens(text: str) -> int:
@@ -424,7 +424,7 @@ def print_markdown(session, tasks, coverage):
 
     print("## Methodology")
     print()
-    print("- **Tokenizer**: tiktoken `cl100k_base` (GPT-4o family, comparable to Claude)")
+    print("- **Tokenizer**: tiktoken `o200k_base` (GPT-5 tokenizer)")
     print("- **MCP payload**: Real `listTools` JSON-RPC response extracted from `google-analytics-mcp` v0.2.0")
     print("- **CLI payload**: Real `gmp` CLI outputs captured against live Google Analytics API")
     print("- **MCP schema cost**: Counted once per task (injected into LLM context on every interaction)")
