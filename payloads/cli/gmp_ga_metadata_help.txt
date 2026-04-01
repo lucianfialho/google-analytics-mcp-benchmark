@@ -1,0 +1,9 @@
+Usage: gmp ga metadata [options]
+
+List available dimensions and metrics
+
+Options:
+  -p, --property <id>  GA4 property ID
+  --type <type>        Filter: dimensions, metrics, or all (default: "all")
+  -f, --format <fmt>   Output format: json, table, csv (default: "table")
+  -h, --help           display help for command

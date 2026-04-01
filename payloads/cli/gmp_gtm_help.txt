@@ -1,0 +1,15 @@
+Usage: gmp gtm [options] [command]
+
+Google Tag Manager API
+
+Options:
+  -h, --help            display help for command
+
+Commands:
+  accounts [options]    List GTM accounts
+  containers [options]  List containers for an account
+  tags [options]        List tags in a container workspace
+  triggers [options]    List triggers in a container workspace
+  variables [options]   List variables in a container workspace
+  versions [options]    List published container versions
+  help [command]        display help for command

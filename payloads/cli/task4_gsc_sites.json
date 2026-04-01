@@ -1,0 +1,14 @@
+[
+  {
+    "siteUrl": "https://metricasboss.com.br/",
+    "permissionLevel": "siteOwner"
+  },
+  {
+    "siteUrl": "sc-domain:antiachismosocialclub.com.br",
+    "permissionLevel": "siteOwner"
+  },
+  {
+    "siteUrl": "https://landing.metricasboss.com.br/metricas-boss-prime/",
+    "permissionLevel": "siteFullUser"
+  }
+]

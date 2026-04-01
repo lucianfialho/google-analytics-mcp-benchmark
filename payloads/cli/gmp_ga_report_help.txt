@@ -1,0 +1,14 @@
+Usage: gmp ga report [options]
+
+Run a report (dimensions + metrics)
+
+Options:
+  -p, --property <id>       GA4 property ID (numeric)
+  -m, --metrics <list>      Comma-separated metrics
+  -d, --dimensions <list>   Comma-separated dimensions
+  -r, --date-range <range>  Date range: 30d, 7d, 2024-01-01..2024-01-31
+                            (default: "30d")
+  -l, --limit <n>           Row limit (default: "10000")
+  --filter <expr>           Dimension filter (fieldName==value)
+  -f, --format <fmt>        Output format: json, table, csv (default: "json")
+  -h, --help                display help for command

@@ -1,0 +1,15 @@
+Usage: gmp ga [options] [command]
+
+Google Analytics Data API (GA4)
+
+Options:
+  -h, --help            display help for command
+
+Commands:
+  report [options]      Run a report (dimensions + metrics)
+  realtime [options]    Run a realtime report
+  metadata [options]    List available dimensions and metrics
+  accounts [options]    List GA4 accounts
+  properties [options]  List GA4 properties for an account
+  check [options]       Check dimension/metric compatibility
+  help [command]        display help for command

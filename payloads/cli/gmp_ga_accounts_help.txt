@@ -1,0 +1,7 @@
+Usage: gmp ga accounts [options]
+
+List GA4 accounts
+
+Options:
+  -f, --format <fmt>  Output format: json, table, csv (default: "table")
+  -h, --help          display help for command

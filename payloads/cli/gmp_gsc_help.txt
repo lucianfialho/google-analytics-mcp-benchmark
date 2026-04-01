@@ -1,0 +1,14 @@
+Usage: gmp gsc [options] [command]
+
+Google Search Console API
+
+Options:
+  -h, --help          display help for command
+
+Commands:
+  sites [options]     List verified sites
+  report [options]    Search analytics report (clicks, impressions, CTR,
+                      position)
+  inspect [options]   Inspect URL indexation status
+  sitemaps [options]  List sitemaps for a site
+  help [command]      display help for command

@@ -1,0 +1,12 @@
+Usage: gmp ads campaigns [options]
+
+Campaign performance report
+
+Options:
+  -c, --customer-id <id>    Customer ID
+  -r, --date-range <range>  Date range: LAST_7_DAYS, LAST_30_DAYS, THIS_MONTH,
+                            LAST_MONTH (default: "LAST_30_DAYS")
+  --status <s>              Filter: ENABLED, PAUSED, REMOVED
+  -l, --limit <n>           Row limit (default: "50")
+  -f, --format <fmt>        Output format: json, table, csv (default: "json")
+  -h, --help                display help for command

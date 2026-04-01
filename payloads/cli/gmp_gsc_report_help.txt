@@ -1,0 +1,18 @@
+Usage: gmp gsc report [options]
+
+Search analytics report (clicks, impressions, CTR, position)
+
+Options:
+  -s, --site <url>          Site URL (e.g. https://example.com or
+                            sc-domain:example.com)
+  -d, --dimensions <list>   Comma-separated: query, page, country, device, date,
+                            searchAppearance
+  -r, --date-range <range>  Date range: 28d, 90d, 2024-01-01..2024-01-31
+                            (default: "28d")
+  -l, --limit <n>           Row limit (default: "25")
+  --query <q>               Filter by query (contains)
+  --page <p>                Filter by page URL (contains)
+  --type <t>                Search type: web, image, video, news, discover,
+                            googleNews (default: "web")
+  -f, --format <fmt>        Output format: json, table, csv (default: "json")
+  -h, --help                display help for command

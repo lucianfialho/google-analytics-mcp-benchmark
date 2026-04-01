@@ -1,0 +1,37 @@
+[
+  {
+    "name": "properties/250837915",
+    "displayName": "VTEX Site",
+    "propertyType": "PROPERTY_TYPE_ORDINARY",
+    "timeZone": "America/Sao_Paulo",
+    "currencyCode": "BRL"
+  },
+  {
+    "name": "properties/272697025",
+    "displayName": "Materials - GA4",
+    "propertyType": "PROPERTY_TYPE_ORDINARY",
+    "timeZone": "America/Sao_Paulo",
+    "currencyCode": "USD"
+  },
+  {
+    "name": "properties/368369172",
+    "displayName": "VTEX Blog - GA4",
+    "propertyType": "PROPERTY_TYPE_ORDINARY",
+    "timeZone": "America/Los_Angeles",
+    "currencyCode": "USD"
+  },
+  {
+    "name": "properties/388568047",
+    "displayName": "VTEX Box - GA4",
+    "propertyType": "PROPERTY_TYPE_ORDINARY",
+    "timeZone": "America/Sao_Paulo",
+    "currencyCode": "USD"
+  },
+  {
+    "name": "properties/403508183",
+    "displayName": "VTEX Site - GA4",
+    "propertyType": "PROPERTY_TYPE_ORDINARY",
+    "timeZone": "America/Sao_Paulo",
+    "currencyCode": "BRL"
+  }
+]

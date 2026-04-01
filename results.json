@@ -1,0 +1,301 @@
+{
+  "session_init": {
+    "mcp": {
+      "total_tokens": 8004,
+      "total_chars": 32445,
+      "tools_count": 7,
+      "tool_breakdown": [
+        {
+          "name": "get_account_summaries",
+          "total_tokens": 50,
+          "desc_tokens": 12,
+          "schema_tokens": 14
+        },
+        {
+          "name": "list_google_ads_links",
+          "total_tokens": 129,
+          "desc_tokens": 47,
+          "schema_tokens": 54
+        },
+        {
+          "name": "get_property_details",
+          "total_tokens": 120,
+          "desc_tokens": 40,
+          "schema_tokens": 54
+        },
+        {
+          "name": "list_property_annotations",
+          "total_tokens": 169,
+          "desc_tokens": 85,
+          "schema_tokens": 54
+        },
+        {
+          "name": "get_custom_dimensions_and_metrics",
+          "total_tokens": 125,
+          "desc_tokens": 42,
+          "schema_tokens": 54
+        },
+        {
+          "name": "run_report",
+          "total_tokens": 3738,
+          "desc_tokens": 3110,
+          "schema_tokens": 259
+        },
+        {
+          "name": "run_realtime_report",
+          "total_tokens": 3626,
+          "desc_tokens": 3044,
+          "schema_tokens": 215
+        }
+      ]
+    },
+    "cli": {
+      "total_tokens_all_helps": 1381,
+      "helps": {
+        "gmp_ads_campaigns_help": {
+          "tokens": 143,
+          "chars": 504
+        },
+        "gmp_ads_help": {
+          "tokens": 118,
+          "chars": 550
+        },
+        "gmp_ga_accounts_help": {
+          "tokens": 52,
+          "chars": 182
+        },
+        "gmp_ga_help": {
+          "tokens": 120,
+          "chars": 516
+        },
+        "gmp_ga_metadata_help": {
+          "tokens": 89,
+          "chars": 319
+        },
+        "gmp_ga_realtime_help": {
+          "tokens": 115,
+          "chars": 397
+        },
+        "gmp_ga_report_help": {
+          "tokens": 181,
+          "chars": 608
+        },
+        "gmp_gsc_help": {
+          "tokens": 102,
+          "chars": 423
+        },
+        "gmp_gsc_report_help": {
+          "tokens": 237,
+          "chars": 895
+        },
+        "gmp_gtm_help": {
+          "tokens": 117,
+          "chars": 519
+        },
+        "gmp_help": {
+          "tokens": 107,
+          "chars": 453
+        }
+      }
+    }
+  },
+  "tasks": [
+    {
+      "id": "task1",
+      "name": "List GA4 accounts",
+      "description": "Retrieve all GA4 accounts the user has access to",
+      "mcp": {
+        "schema_tokens": 8004,
+        "call_tokens": 18,
+        "response_tokens": 3218,
+        "total_tokens": 11240
+      },
+      "cli": {
+        "discovery_tokens": 279,
+        "discovery_detail": {
+          "gmp_help": 107,
+          "gmp_ga_help": 120,
+          "gmp_ga_accounts_help": 52
+        },
+        "command_tokens": 7,
+        "response_tokens": 2790,
+        "total_tokens": 3076
+      },
+      "comparison": {
+        "mcp_total": 11240,
+        "cli_total": 3076,
+        "difference": 8164,
+        "multiplier": 3.7
+      }
+    },
+    {
+      "id": "task2",
+      "name": "Get property details",
+      "description": "Get details about a specific GA4 property",
+      "mcp": {
+        "schema_tokens": 8004,
+        "call_tokens": 28,
+        "response_tokens": 378,
+        "total_tokens": 8410
+      },
+      "cli": {
+        "discovery_tokens": 227,
+        "discovery_detail": {
+          "gmp_help": 107,
+          "gmp_ga_help": 120
+        },
+        "command_tokens": 12,
+        "response_tokens": 303,
+        "total_tokens": 542
+      },
+      "comparison": {
+        "mcp_total": 8410,
+        "cli_total": 542,
+        "difference": 7868,
+        "multiplier": 15.5
+      }
+    },
+    {
+      "id": "task3",
+      "name": "Run GA4 report (top pages last 7 days)",
+      "description": "Get top 10 pages by sessions in the last 7 days",
+      "mcp": {
+        "schema_tokens": 8004,
+        "call_tokens": 93,
+        "response_tokens": 37,
+        "total_tokens": 8134
+      },
+      "cli": {
+        "discovery_tokens": 408,
+        "discovery_detail": {
+          "gmp_help": 107,
+          "gmp_ga_help": 120,
+          "gmp_ga_report_help": 181
+        },
+        "command_tokens": 33,
+        "response_tokens": 1,
+        "total_tokens": 442
+      },
+      "comparison": {
+        "mcp_total": 8134,
+        "cli_total": 442,
+        "difference": 7692,
+        "multiplier": 18.4
+      }
+    },
+    {
+      "id": "task4",
+      "name": "Run GA4 realtime report",
+      "description": "Get active users right now by country",
+      "mcp": {
+        "schema_tokens": 8004,
+        "call_tokens": 52,
+        "response_tokens": 37,
+        "total_tokens": 8093
+      },
+      "cli": {
+        "discovery_tokens": 342,
+        "discovery_detail": {
+          "gmp_help": 107,
+          "gmp_ga_help": 120,
+          "gmp_ga_realtime_help": 115
+        },
+        "command_tokens": 20,
+        "response_tokens": 1,
+        "total_tokens": 363
+      },
+      "comparison": {
+        "mcp_total": 8093,
+        "cli_total": 363,
+        "difference": 7730,
+        "multiplier": 22.3
+      }
+    },
+    {
+      "id": "task5",
+      "name": "Get custom dimensions and metrics",
+      "description": "List custom dimensions and metrics for a property",
+      "mcp": {
+        "schema_tokens": 8004,
+        "call_tokens": 30,
+        "response_tokens": 38396,
+        "total_tokens": 46430
+      },
+      "cli": {
+        "discovery_tokens": 316,
+        "discovery_detail": {
+          "gmp_help": 107,
+          "gmp_ga_help": 120,
+          "gmp_ga_metadata_help": 89
+        },
+        "command_tokens": 13,
+        "response_tokens": 34256,
+        "total_tokens": 34585
+      },
+      "comparison": {
+        "mcp_total": 46430,
+        "cli_total": 34585,
+        "difference": 11845,
+        "multiplier": 1.3
+      }
+    }
+  ],
+  "coverage": {
+    "mcp": {
+      "products_covered": [
+        "GA4"
+      ],
+      "tools_count": 7,
+      "tools": [
+        "get_account_summaries",
+        "list_google_ads_links",
+        "get_property_details",
+        "list_property_annotations",
+        "get_custom_dimensions_and_metrics",
+        "run_report",
+        "run_realtime_report"
+      ]
+    },
+    "cli": {
+      "products_covered": [
+        "GA4",
+        "Search Console",
+        "Google Ads",
+        "GTM"
+      ],
+      "total_commands": 22,
+      "commands": {
+        "ga": [
+          "report",
+          "realtime",
+          "metadata",
+          "accounts",
+          "properties",
+          "check"
+        ],
+        "gsc": [
+          "sites",
+          "report",
+          "inspect",
+          "sitemaps"
+        ],
+        "ads": [
+          "accounts",
+          "campaigns",
+          "adgroups",
+          "keywords",
+          "search-terms",
+          "query"
+        ],
+        "gtm": [
+          "accounts",
+          "containers",
+          "tags",
+          "triggers",
+          "variables",
+          "versions"
+        ]
+      }
+    }
+  }
+}

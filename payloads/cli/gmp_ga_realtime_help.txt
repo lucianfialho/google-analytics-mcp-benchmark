@@ -1,0 +1,11 @@
+Usage: gmp ga realtime [options]
+
+Run a realtime report
+
+Options:
+  -p, --property <id>      GA4 property ID
+  -m, --metrics <list>     Comma-separated metrics
+  -d, --dimensions <list>  Comma-separated dimensions
+  -l, --limit <n>          Row limit (default: "100")
+  -f, --format <fmt>       Output format: json, table, csv (default: "json")
+  -h, --help               display help for command

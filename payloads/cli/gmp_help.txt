@@ -1,0 +1,15 @@
+Usage: gmp [options] [command]
+
+Google Marketing Platform CLI — GA4, Search Console, Ads, GTM
+
+Options:
+  -V, --version   output the version number
+  -h, --help      display help for command
+
+Commands:
+  auth            Manage authentication
+  ga              Google Analytics Data API (GA4)
+  gsc             Google Search Console API
+  ads             Google Ads API
+  gtm             Google Tag Manager API
+  help [command]  display help for command

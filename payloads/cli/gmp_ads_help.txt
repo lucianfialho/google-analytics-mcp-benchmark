@@ -1,0 +1,16 @@
+Usage: gmp ads [options] [command]
+
+Google Ads API
+
+Options:
+  -h, --help              display help for command
+
+Commands:
+  accounts [options]      List accessible customer accounts
+  campaigns [options]     Campaign performance report
+  adgroups [options]      Ad group performance report
+  keywords [options]      Keyword performance report
+  search-terms [options]  Search terms report (actual queries that triggered
+                          ads)
+  query [options]         Run a raw GAQL query
+  help [command]          display help for command
