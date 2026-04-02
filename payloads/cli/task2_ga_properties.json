@@ -1,35 +1,84 @@
 [
   {
-    "name": "properties/250837915",
-    "displayName": "VTEX Site",
+    "name": "properties/238576854",
+    "displayName": "metricasboss.com.br",
     "propertyType": "PROPERTY_TYPE_ORDINARY",
     "timeZone": "America/Sao_Paulo",
     "currencyCode": "BRL"
   },
   {
-    "name": "properties/272697025",
-    "displayName": "Materials - GA4",
+    "name": "properties/275508245",
+    "displayName": "analyticssummit.com.br – GA4",
     "propertyType": "PROPERTY_TYPE_ORDINARY",
     "timeZone": "America/Sao_Paulo",
-    "currencyCode": "USD"
+    "currencyCode": "BRL"
   },
   {
-    "name": "properties/368369172",
-    "displayName": "VTEX Blog - GA4",
-    "propertyType": "PROPERTY_TYPE_ORDINARY",
-    "timeZone": "America/Los_Angeles",
-    "currencyCode": "USD"
-  },
-  {
-    "name": "properties/388568047",
-    "displayName": "VTEX Box - GA4",
+    "name": "properties/307612040",
+    "displayName": "menosachismomaisdados.com.br",
     "propertyType": "PROPERTY_TYPE_ORDINARY",
     "timeZone": "America/Sao_Paulo",
-    "currencyCode": "USD"
+    "currencyCode": "BRL"
   },
   {
-    "name": "properties/403508183",
-    "displayName": "VTEX Site - GA4",
+    "name": "properties/342976013",
+    "displayName": "Get Google Tag Manager Size",
+    "propertyType": "PROPERTY_TYPE_ORDINARY",
+    "timeZone": "America/Sao_Paulo",
+    "currencyCode": "BRL"
+  },
+  {
+    "name": "properties/350232474",
+    "displayName": "prime.metricasboss.com.br - Área Logada",
+    "propertyType": "PROPERTY_TYPE_ORDINARY",
+    "timeZone": "America/Sao_Paulo",
+    "currencyCode": "BRL"
+  },
+  {
+    "name": "properties/396120446",
+    "displayName": "analyticssummit.com.br - GA4",
+    "propertyType": "PROPERTY_TYPE_ORDINARY",
+    "timeZone": "America/Sao_Paulo",
+    "currencyCode": "BRL"
+  },
+  {
+    "name": "properties/396169567",
+    "displayName": "antiachismosocialclub.com.br - GA4",
+    "propertyType": "PROPERTY_TYPE_ORDINARY",
+    "timeZone": "America/Sao_Paulo",
+    "currencyCode": "BRL"
+  },
+  {
+    "name": "properties/397897100",
+    "displayName": "Get Google Tag Manager Size - GA4",
+    "propertyType": "PROPERTY_TYPE_ORDINARY",
+    "timeZone": "America/Sao_Paulo",
+    "currencyCode": "BRL"
+  },
+  {
+    "name": "properties/399606581",
+    "displayName": "Métricas Boss - GA4",
+    "propertyType": "PROPERTY_TYPE_ORDINARY",
+    "timeZone": "America/Sao_Paulo",
+    "currencyCode": "BRL"
+  },
+  {
+    "name": "properties/405903506",
+    "displayName": "prime.metricasboss.com.br - GA4",
+    "propertyType": "PROPERTY_TYPE_ORDINARY",
+    "timeZone": "America/Sao_Paulo",
+    "currencyCode": "BRL"
+  },
+  {
+    "name": "properties/415097315",
+    "displayName": "LP - MB Consultoria",
+    "propertyType": "PROPERTY_TYPE_ORDINARY",
+    "timeZone": "America/Sao_Paulo",
+    "currencyCode": "BRL"
+  },
+  {
+    "name": "properties/493761544",
+    "displayName": "trustydata.io",
     "propertyType": "PROPERTY_TYPE_ORDINARY",
     "timeZone": "America/Sao_Paulo",
     "currencyCode": "BRL"

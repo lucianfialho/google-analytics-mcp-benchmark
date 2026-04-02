@@ -48,7 +48,7 @@ gmp ga properties --account "$ACCOUNT_ID" -f json > "$CLI_DIR/task2_ga_propertie
 echo "  -> $(wc -c < "$CLI_DIR/task2_ga_properties.json") bytes"
 
 echo "Task 3: Run GA4 report (top pages, 7d)..."
-gmp ga report -p "$PROPERTY_ID" -m sessions,screenPageViews -d pagePath -r 7d -l 10 -f json > "$CLI_DIR/task3_ga_report.json" 2>/dev/null
+gmp ga report -p "$PROPERTY_ID" -m sessions,screenPageViews -d pagePath -r 7d -l 10 -f json > "$CLI_DIR/task3_ga_report.json"
 echo "  -> $(wc -c < "$CLI_DIR/task3_ga_report.json") bytes"
 
 echo "Task 4: Run GA4 realtime report..."

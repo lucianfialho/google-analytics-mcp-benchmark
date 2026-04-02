@@ -135,8 +135,8 @@
       "mcp": {
         "schema_tokens": 8004,
         "call_tokens": 28,
-        "response_tokens": 378,
-        "total_tokens": 8410
+        "response_tokens": 906,
+        "total_tokens": 8938
       },
       "cli": {
         "discovery_tokens": 227,
@@ -145,14 +145,14 @@
           "gmp_ga_help": 120
         },
         "command_tokens": 12,
-        "response_tokens": 303,
-        "total_tokens": 542
+        "response_tokens": 763,
+        "total_tokens": 1002
       },
       "comparison": {
-        "mcp_total": 8410,
-        "cli_total": 542,
-        "difference": 7868,
-        "multiplier": 15.5
+        "mcp_total": 8938,
+        "cli_total": 1002,
+        "difference": 7936,
+        "multiplier": 8.9
       }
     },
     {
@@ -162,8 +162,8 @@
       "mcp": {
         "schema_tokens": 8004,
         "call_tokens": 93,
-        "response_tokens": 37,
-        "total_tokens": 8134
+        "response_tokens": 496,
+        "total_tokens": 8593
       },
       "cli": {
         "discovery_tokens": 408,
@@ -173,14 +173,14 @@
           "gmp_ga_report_help": 181
         },
         "command_tokens": 33,
-        "response_tokens": 1,
-        "total_tokens": 442
+        "response_tokens": 391,
+        "total_tokens": 832
       },
       "comparison": {
-        "mcp_total": 8134,
-        "cli_total": 442,
-        "difference": 7692,
-        "multiplier": 18.4
+        "mcp_total": 8593,
+        "cli_total": 832,
+        "difference": 7761,
+        "multiplier": 10.3
       }
     },
     {
@@ -190,8 +190,8 @@
       "mcp": {
         "schema_tokens": 8004,
         "call_tokens": 52,
-        "response_tokens": 37,
-        "total_tokens": 8093
+        "response_tokens": 61,
+        "total_tokens": 8117
       },
       "cli": {
         "discovery_tokens": 342,
@@ -201,14 +201,14 @@
           "gmp_ga_realtime_help": 115
         },
         "command_tokens": 20,
-        "response_tokens": 1,
-        "total_tokens": 363
+        "response_tokens": 21,
+        "total_tokens": 383
       },
       "comparison": {
-        "mcp_total": 8093,
-        "cli_total": 363,
-        "difference": 7730,
-        "multiplier": 22.3
+        "mcp_total": 8117,
+        "cli_total": 383,
+        "difference": 7734,
+        "multiplier": 21.2
       }
     },
     {
@@ -218,8 +218,8 @@
       "mcp": {
         "schema_tokens": 8004,
         "call_tokens": 30,
-        "response_tokens": 38396,
-        "total_tokens": 46430
+        "response_tokens": 40589,
+        "total_tokens": 48623
       },
       "cli": {
         "discovery_tokens": 316,
@@ -229,13 +229,13 @@
           "gmp_ga_metadata_help": 89
         },
         "command_tokens": 13,
-        "response_tokens": 34256,
-        "total_tokens": 34585
+        "response_tokens": 36149,
+        "total_tokens": 36478
       },
       "comparison": {
-        "mcp_total": 46430,
-        "cli_total": 34585,
-        "difference": 11845,
+        "mcp_total": 48623,
+        "cli_total": 36478,
+        "difference": 12145,
         "multiplier": 1.3
       }
     }

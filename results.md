@@ -26,11 +26,11 @@
 | Task | MCP Tokens | CLI Tokens | Ratio | Tokens Saved |
 |------|-----------|-----------|-------|-------------|
 | List GA4 accounts | 11,240 | 3,076 | **3.7x** | 8,164 |
-| Get property details | 8,410 | 542 | **15.5x** | 7,868 |
-| Run GA4 report (top pages last 7 days) | 8,134 | 442 | **18.4x** | 7,692 |
-| Run GA4 realtime report | 8,093 | 363 | **22.3x** | 7,730 |
-| Get custom dimensions and metrics | 46,430 | 34,585 | **1.3x** | 11,845 |
-| **Total** | **82,307** | **39,008** | **2.1x** | **43,299** |
+| Get property details | 8,938 | 1,002 | **8.9x** | 7,936 |
+| Run GA4 report (top pages last 7 days) | 8,593 | 832 | **10.3x** | 7,761 |
+| Run GA4 realtime report | 8,117 | 383 | **21.2x** | 7,734 |
+| Get custom dimensions and metrics | 48,623 | 36,478 | **1.3x** | 12,145 |
+| **Total** | **85,511** | **41,771** | **2.0x** | **43,740** |
 
 ### Token breakdown per task
 
@@ -39,20 +39,20 @@
 - CLI: discovery 279 + cmd 7 + response 2,790 = **3,076**
 
 **Get property details**
-- MCP: schema 8,004 + call 28 + response 378 = **8,410**
-- CLI: discovery 227 + cmd 12 + response 303 = **542**
+- MCP: schema 8,004 + call 28 + response 906 = **8,938**
+- CLI: discovery 227 + cmd 12 + response 763 = **1,002**
 
 **Run GA4 report (top pages last 7 days)**
-- MCP: schema 8,004 + call 93 + response 37 = **8,134**
-- CLI: discovery 408 + cmd 33 + response 1 = **442**
+- MCP: schema 8,004 + call 93 + response 496 = **8,593**
+- CLI: discovery 408 + cmd 33 + response 391 = **832**
 
 **Run GA4 realtime report**
-- MCP: schema 8,004 + call 52 + response 37 = **8,093**
-- CLI: discovery 342 + cmd 20 + response 1 = **363**
+- MCP: schema 8,004 + call 52 + response 61 = **8,117**
+- CLI: discovery 342 + cmd 20 + response 21 = **383**
 
 **Get custom dimensions and metrics**
-- MCP: schema 8,004 + call 30 + response 38,396 = **46,430**
-- CLI: discovery 316 + cmd 13 + response 34,256 = **34,585**
+- MCP: schema 8,004 + call 30 + response 40,589 = **48,623**
+- CLI: discovery 316 + cmd 13 + response 36,149 = **36,478**
 
 ## Methodology
 

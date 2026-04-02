@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "pagePath": "/",
+    "sessions": "360",
+    "screenPageViews": "41"
+  },
+  {
+    "pagePath": "/artigos/marketing-mix-modeling-o-que-e",
+    "sessions": "60",
+    "screenPageViews": "1"
+  },
+  {
+    "pagePath": "/o-que-fazemos",
+    "sessions": "53",
+    "screenPageViews": "41"
+  },
+  {
+    "pagePath": "/artigos/6-dashboards-incriveis-do-looker-studio-para-voce-usar-hoje",
+    "sessions": "44",
+    "screenPageViews": "0"
+  },
+  {
+    "pagePath": "/blog-de-web-analytics",
+    "sessions": "44",
+    "screenPageViews": "34"
+  },
+  {
+    "pagePath": "/artigos/google-meridian-a-ferramenta-de-marketing-mix-modeling-open-source-do-google",
+    "sessions": "40",
+    "screenPageViews": "0"
+  },
+  {
+    "pagePath": "/artigos/os-4-tipos-de-analise-de-dados-e-como-faze-los",
+    "sessions": "38",
+    "screenPageViews": "0"
+  },
+  {
+    "pagePath": "/artigos/conversao-assistida-google-analytics",
+    "sessions": "37",
+    "screenPageViews": "0"
+  },
+  {
+    "pagePath": "/somos-uma-agencia-de-web-analytics",
+    "sessions": "29",
+    "screenPageViews": "19"
+  },
+  {
+    "pagePath": "/artigos/tudo-sobre-ga-4",
+    "sessions": "25",
+    "screenPageViews": "0"
+  }
+]

@@ -2618,6 +2618,167 @@
     "description": "The combined values of year and week. Example values include 202253 or 202301."
   },
   {
+    "type": "dimension",
+    "apiName": "customChannelGroup:5833395149",
+    "uiName": "Canais Métricas Boss",
+    "category": "Attribution",
+    "description": ""
+  },
+  {
+    "type": "dimension",
+    "apiName": "customEvent:accessibility_action",
+    "uiName": "accessibility_action",
+    "category": "Event-scoped Custom Dimension",
+    "description": "An event scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customEvent:accessibility_category",
+    "uiName": "accessibility_category",
+    "category": "Event-scoped Custom Dimension",
+    "description": "An event scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customEvent:accessibility_label",
+    "uiName": "accessibility_label",
+    "category": "Event-scoped Custom Dimension",
+    "description": "An event scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customEvent:accessibility_method",
+    "uiName": "accessibility_method",
+    "category": "Event-scoped Custom Dimension",
+    "description": "An event scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customEvent:accessibility_state",
+    "uiName": "accessibility_state",
+    "category": "Event-scoped Custom Dimension",
+    "description": "An event scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customEvent:accessibility_value",
+    "uiName": "accessibility_value",
+    "category": "Event-scoped Custom Dimension",
+    "description": "An event scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customEvent:block",
+    "uiName": "block",
+    "category": "Event-scoped Custom Dimension",
+    "description": "An event scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customEvent:content_author",
+    "uiName": "content_author",
+    "category": "Event-scoped Custom Dimension",
+    "description": "An event scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customEvent:content_category",
+    "uiName": "content_category",
+    "category": "Event-scoped Custom Dimension",
+    "description": "An event scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customEvent:content_name",
+    "uiName": "content_name",
+    "category": "Event-scoped Custom Dimension",
+    "description": "An event scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customEvent:interaction_rating",
+    "uiName": "interaction_rating",
+    "category": "Event-scoped Custom Dimension",
+    "description": "An event scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customEvent:interaction_target",
+    "uiName": "interaction_target",
+    "category": "Event-scoped Custom Dimension",
+    "description": "An event scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customEvent:interaction_value",
+    "uiName": "interaction_value",
+    "category": "Event-scoped Custom Dimension",
+    "description": "An event scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customEvent:label",
+    "uiName": "label",
+    "category": "Event-scoped Custom Dimension",
+    "description": "An event scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customEvent:percentual",
+    "uiName": "percentual",
+    "category": "Event-scoped Custom Dimension",
+    "description": "An event scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customEvent:position",
+    "uiName": "position",
+    "category": "Event-scoped Custom Dimension",
+    "description": "An event scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customEvent:post",
+    "uiName": "post",
+    "category": "Event-scoped Custom Dimension",
+    "description": "An event scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customUser:content_group",
+    "uiName": "content_group",
+    "category": "User-scoped Custom Dimension",
+    "description": "A user scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customUser:postCategory",
+    "uiName": "postCategory",
+    "category": "User-scoped Custom Dimension",
+    "description": "A user scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "customUser:theme",
+    "uiName": "theme",
+    "category": "User-scoped Custom Dimension",
+    "description": "A user scoped custom dimension for your Analytics property."
+  },
+  {
+    "type": "dimension",
+    "apiName": "firstUserCustomChannelGroup:5833395149",
+    "uiName": "First User Canais Métricas Boss",
+    "category": "Traffic Source",
+    "description": ""
+  },
+  {
+    "type": "dimension",
+    "apiName": "sessionCustomChannelGroup:5833395149",
+    "uiName": "Session Canais Métricas Boss",
+    "category": "Traffic Source",
+    "description": ""
+  },
+  {
     "type": "metric",
     "apiName": "active1DayUsers",
     "uiName": "1-day active users",
@@ -3221,6 +3382,27 @@
   },
   {
     "type": "metric",
+    "apiName": "keyEvents:conversion_dropff_overlay",
+    "uiName": "Key event count for conversion_dropff_overlay",
+    "category": "Event",
+    "description": "The count of a specific key event."
+  },
+  {
+    "type": "metric",
+    "apiName": "keyEvents:generate_lead",
+    "uiName": "Key event count for generate_lead",
+    "category": "Event",
+    "description": "The count of a specific key event."
+  },
+  {
+    "type": "metric",
+    "apiName": "keyEvents:go_to_prime",
+    "uiName": "Key event count for go_to_prime",
+    "category": "Event",
+    "description": "The count of a specific key event."
+  },
+  {
+    "type": "metric",
     "apiName": "keyEvents:purchase",
     "uiName": "Key event count for purchase",
     "category": "Event",
@@ -3228,10 +3410,52 @@
   },
   {
     "type": "metric",
+    "apiName": "sessionKeyEventRate:conversion_dropff_overlay",
+    "uiName": "Session key event rate for conversion_dropff_overlay",
+    "category": "Session",
+    "description": "The percentage of sessions in which a specific key event was triggered."
+  },
+  {
+    "type": "metric",
+    "apiName": "sessionKeyEventRate:generate_lead",
+    "uiName": "Session key event rate for generate_lead",
+    "category": "Session",
+    "description": "The percentage of sessions in which a specific key event was triggered."
+  },
+  {
+    "type": "metric",
+    "apiName": "sessionKeyEventRate:go_to_prime",
+    "uiName": "Session key event rate for go_to_prime",
+    "category": "Session",
+    "description": "The percentage of sessions in which a specific key event was triggered."
+  },
+  {
+    "type": "metric",
     "apiName": "sessionKeyEventRate:purchase",
     "uiName": "Session key event rate for purchase",
     "category": "Session",
     "description": "The percentage of sessions in which a specific key event was triggered."
+  },
+  {
+    "type": "metric",
+    "apiName": "userKeyEventRate:conversion_dropff_overlay",
+    "uiName": "User key event rate for conversion_dropff_overlay",
+    "category": "User",
+    "description": "The percentage of users who triggered a specific key event."
+  },
+  {
+    "type": "metric",
+    "apiName": "userKeyEventRate:generate_lead",
+    "uiName": "User key event rate for generate_lead",
+    "category": "User",
+    "description": "The percentage of users who triggered a specific key event."
+  },
+  {
+    "type": "metric",
+    "apiName": "userKeyEventRate:go_to_prime",
+    "uiName": "User key event rate for go_to_prime",
+    "category": "User",
+    "description": "The percentage of users who triggered a specific key event."
   },
   {
     "type": "metric",
