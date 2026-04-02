@@ -2,18 +2,18 @@
 
 A reproducible benchmark comparing the token cost of [Google Analytics MCP](https://github.com/googleanalytics/google-analytics-mcp) vs the [`gmp` CLI](https://github.com/lucianfialho/gmp) when used by AI agents (Claude, GPT-5, Gemini, etc).
 
-**TL;DR**: MCP consumes **2-22x more tokens** than CLI for the same GA4 tasks, primarily because MCP injects the full tool schema (~8,000 tokens) into the LLM context on every interaction.
+**TL;DR**: MCP consumes **1.3-21x more tokens** than CLI for the same GA4 tasks, primarily because MCP injects the full tool schema (~8,000 tokens) into the LLM context on every interaction.
 
 ## Results
 
 | Task | MCP Tokens | CLI Tokens | Ratio |
 |------|-----------|-----------|-------|
 | List GA4 accounts | 11,240 | 3,076 | **3.7x** |
-| Get property details | 8,410 | 542 | **15.5x** |
-| Run GA4 report | 8,134 | 442 | **18.4x** |
-| Run realtime report | 8,093 | 363 | **22.3x** |
-| Get custom dimensions/metrics | 46,430 | 34,585 | **1.3x** |
-| **Total (5 tasks)** | **82,307** | **39,008** | **2.1x** |
+| Get property details | 8,938 | 1,002 | **8.9x** |
+| Run GA4 report | 8,593 | 832 | **10.3x** |
+| Run realtime report | 8,117 | 383 | **21.2x** |
+| Get custom dimensions/metrics | 48,623 | 36,478 | **1.3x** |
+| **Total (5 tasks)** | **85,511** | **41,771** | **2.0x** |
 
 For the full breakdown, see [`results.md`](results.md).
 
@@ -45,30 +45,73 @@ These descriptions are large because they embed JSON examples for filters, date 
 - Node.js 18+ (for `gmp` CLI)
 - A Google account with GA4 access
 
-### Step 1: Install dependencies
+### Tools used
+
+| Tool | Repository | What it does |
+|------|-----------|-------------|
+| **Google Analytics MCP** | [googleanalytics/google-analytics-mcp](https://github.com/googleanalytics/google-analytics-mcp) | Official MCP server for GA4 by Google. Exposes 7 tools via the MCP protocol. |
+| **gmp CLI** | [lucianfialho/gmp](https://github.com/lucianfialho/gmp) | CLI for Google Marketing Platform (GA4, Search Console, Google Ads, GTM). |
+| **tiktoken** | [openai/tiktoken](https://github.com/openai/tiktoken) | Token counting library. We use `o200k_base` (GPT-5 tokenizer). |
+
+### Step 1: Install and authenticate
+
+#### gmp CLI
 
 ```bash
-# gmp CLI
 npm install -g gmp-cli
 gmp auth login
+```
 
-# Python deps (for MCP payload extraction + benchmark)
-pip install tiktoken
+This opens a browser window for Google OAuth. Grant access to your Google Analytics account. Once authenticated, `gmp` stores credentials locally.
+
+#### Google Analytics MCP (optional — only needed to re-capture the MCP schema)
+
+The MCP `listTools` payload is already captured in `payloads/mcp/listTools_response.json`. You only need to install the MCP server if you want to re-capture it from source:
+
+```bash
 pip install git+https://github.com/googleanalytics/google-analytics-mcp.git
 ```
 
-### Step 2: Capture payloads
+> **Note**: The MCP server uses [Google ADK](https://github.com/google/adk-python) internally. Authentication for the MCP server follows the [ADK auth guide](https://google.github.io/adk-python/tools/mcp-tools/). For this benchmark, we only extract tool schemas (no auth needed) — actual API calls are made through the `gmp` CLI.
+
+#### Python dependencies
 
 ```bash
-# Capture MCP listTools payload (no auth needed)
-python3 scripts/capture-mcp-payload.py
-
-# Capture CLI payloads (needs auth + your property/account IDs)
-# Find your IDs: gmp ga accounts && gmp ga properties --account <ACCOUNT_ID>
-bash scripts/capture-cli-payloads.sh <PROPERTY_ID> <ACCOUNT_ID>
+pip install tiktoken
 ```
 
-### Step 3: Run benchmark
+### Step 2: Find your GA4 IDs
+
+You need your GA4 **Account ID** and **Property ID**:
+
+```bash
+# List all accounts you have access to
+gmp ga accounts
+
+# Pick an account and list its properties
+gmp ga properties --account <ACCOUNT_ID>
+
+# Verify the property has data (should return rows, not [])
+gmp ga report -p <PROPERTY_ID> -m sessions -r 7d -l 3
+```
+
+> **Tip**: If a property returns `[]`, it has no data for the period. Try a different property or a longer date range (`-r 30d`).
+
+### Step 3: Capture payloads
+
+```bash
+# Capture CLI payloads (--help outputs + real API responses)
+bash scripts/capture-cli-payloads.sh <PROPERTY_ID> <ACCOUNT_ID>
+
+# (Optional) Re-capture MCP listTools payload from source
+python3 scripts/capture-mcp-payload.py
+```
+
+The capture script collects:
+- All `--help` outputs at each CLI level (`gmp --help`, `gmp ga --help`, etc.)
+- Real API responses for 5 GA4 tasks (accounts, properties, report, realtime, metadata)
+
+### Step 4: Run benchmark
 
 ```bash
 python3 scripts/benchmark.py                    # terminal output
