@@ -1,6 +1,6 @@
 # MCP vs CLI Token Benchmark: Google Analytics
 
-A reproducible benchmark comparing the token cost of [Google Analytics MCP](https://github.com/googleanalytics/google-analytics-mcp) vs the [`gmp-cli`](https://github.com/lucianfialho/gmp) when used by AI agents (Claude, GPT-5, Gemini, etc).
+A reproducible benchmark comparing the token cost of [Google Analytics MCP](https://github.com/googleanalytics/google-analytics-mcp) vs the [`gmp-cli`](https://github.com/lucianfialho/gmp-cli) when used by AI agents (Claude, GPT-5, Gemini, etc).
 
 **TL;DR**: MCP consumes **1.3-21x more tokens** than CLI for the same GA4 tasks, primarily because MCP injects the full tool schema (~8,000 tokens) into the LLM context on every interaction.
 
